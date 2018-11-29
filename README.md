@@ -1,7 +1,7 @@
 # Reactor
 ##A simple bot that adds different reactions to set users
 
-HOW TO USE:
+##HOW TO USE:
 1) Download this bot and python (https://www.python.org/)
 2) Go to https://discordapp.com/developers/applications/
 3) Create an application
@@ -14,7 +14,7 @@ HOW TO USE:
 10) Your bot works!
 If you have any issues with this simply create an issue
 
-HOW TO ADD USERS TO FILE
+##HOW TO ADD USERS TO FILE
 ```json
 {
   "users": [
