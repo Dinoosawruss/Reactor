@@ -1,5 +1,5 @@
 # Reactor
-## A simple bot that adds different reactions to set users
+A simple bot that adds different reactions to set users
 
 ## HOW TO USE:
 1) Download this bot and python (https://www.python.org/)
