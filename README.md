@@ -5,10 +5,10 @@ A simple bot that adds different reactions to set users
 1) Download this bot and python (https://www.python.org/)
 2) Go to https://discordapp.com/developers/applications/
 3) Create an application
-4) Create a bot and get token: Bot > Add Bot > Token > Copy
-5) Paste Token into TOKEN = 'X' and replace the X in the python file
+4) Create a bot and get token: `Bot > Add Bot > Token > Copy`
+5) Paste Token into `TOKEN = 'X'` and replace the X in the python file
 6) Open CMD
-7) Type: pip install -U git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]
+7) Type: `pip install -U git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]`
 8) Go to python and run file
 9) Invite your bot to discord
 10) Your bot works!
