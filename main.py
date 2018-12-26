@@ -1,3 +1,5 @@
+# Anti Swear Bot
+
 #Discord Imports
 import discord
 from discord.ext import commands
@@ -6,7 +8,7 @@ from discord.ext import commands
 import json
 
 #Requirements
-TOKEN = 'X'
+TOKEN = 'NoToken4U'
 prefix = "-"
 bot = commands.Bot(command_prefix=prefix)
 bot.remove_command("help")
@@ -29,6 +31,16 @@ async def help(ctx):
     embed = discord.Embed(title="**- Commands -**", description="", color=embedC)
     embed.add_field(name="{}help".format(prefix), value="Shows this message", inline=False)
     await ctx.send(embed=embed)
+
+@bot.command(pass_context=True)
+async def getemoji(ctx, emoji):
+    with open('reactions.json') as u:
+        data = json.load(u)
+
+    data['users'].append({"name": str(ctx.message.author),"react": str(emoji)})
+    
+    with open('reactions.json', 'w') as f:
+        json.dump(data, f, indent=2)
 
 @bot.event
 async def on_message(message):
